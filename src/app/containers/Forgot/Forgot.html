@@ -1,0 +1,36 @@
+<md-content class="mdForgot">
+
+  <div layout="row" layout-fill>
+
+    <div flex></div>
+    <div layout-padding layout="column" layout-align="center">
+      <div class="titleHeader" layout="row" layout-align="center">
+        <i class="material-icons">favorite</i>
+        Match Date
+        <i class="material-icons">favorite</i>
+      </div>
+
+      <div layout="row" layout-align="center">
+        <md-input-container class="shortInput">
+          <label>Email</label>
+          <input type="email" ng-model="$ctrl.logUser.email">
+        </md-input-container>
+      </div>
+      <div class="md-caption">
+        Enter your email to receive instructions on how to reset your password.
+      </div>
+      <div layout="row" layout-align="center">
+        <md-button class="md-button md-accent md-raised"
+                    ng-click="$ctrl.back()">
+          Back
+        </md-button>
+        <md-button class="md-button md-primary md-raised"
+                   ng-click="$ctrl.sendEmail()"
+                   ng-disabled="!$ctrl.logUser.email">
+          Send Email
+        </md-button>
+      </div>
+    </div>
+    <div flex></div>
+  </div>
+</md-content>

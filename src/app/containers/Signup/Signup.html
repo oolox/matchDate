@@ -1,0 +1,58 @@
+<md-content class="mdSignup">
+
+  <div layout="row" layout-fill>
+
+      <div flex></div>
+      <div layout-padding layout="column" layout-align="center">
+        <div class="titleHeader" layout="row" layout-align="center">
+          <i class="material-icons">favorite</i>
+          Match Date
+          <i class="material-icons">favorite</i>
+        </div>
+        <div class="md-caption">
+          This information is private.
+          Other users will not see this information.</div>
+        <div layout="row" layout-align="center">
+          <validator valid="$ctrl.logUser.username.length>3"></validator>
+          <md-input-container class="shortInput">
+            <label>User Name</label>
+            <input type="text" ng-model="$ctrl.logUser.username">
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center">
+          <validator valid="$ctrl.logUser.email.length>3"></validator>
+          <md-input-container class="shortInput">
+            <label>Email</label>
+            <input type="email" ng-model="$ctrl.logUser.email">
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center">
+          <validator valid="$ctrl.logUser.password.length>3"></validator>
+          <md-input-container class="shortInput">
+            <label>Password</label>
+            <input type="password" ng-model="$ctrl.logUser.password">
+          </md-input-container>
+        </div>
+        <div layout="row" layout-align="center">
+          <validator valid="$ctrl.logUser.confirmpassword.length>3"></validator>
+          <md-input-container class="shortInput">
+            <label>Confirm Password</label>
+            <input type="password" ng-model="$ctrl.logUser.confirmpassword">
+          </md-input-container>
+        </div>
+
+
+        <div layout="row" layout-align="center">
+          <md-button class="md-button md-accent md-raised" ng-click="$ctrl.back()">
+            Back
+          </md-button>
+          <md-button class="md-button md-primary md-raised">
+            Signup
+          </md-button>
+        </div>
+
+      </div>
+    <div flex></div>
+
+  </div>
+</md-content>
